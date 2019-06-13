@@ -7,9 +7,9 @@
     <!-- meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Li's Digital Services | Home</title>
+    <title>Li's Digital Services | Logos & Media</title>
     <meta name="description" content="Andrew Li's Personal Website">
-    <meta name="keywords" content="andrew li, code, logo, logos, website">
+    <meta name="keywords" content="andrew li, code, logo, logos, media, website">
     <meta name="author" content="Andrew Li">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,6 @@
 
     <!-- css libraries -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -48,8 +47,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="media.html">Logo & Media </a>
+                <a class="nav-item nav-link" href="index.html">Home </a>
+                <a class="nav-item nav-link active" href="#">Logo & Media <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="coding.html">Coding </a>
                 <a class="nav-item nav-link" href="contact.html">Contact </a>
                 <a class="nav-item nav-link" href="blog.html">Blog </a>
@@ -58,28 +57,17 @@
     </nav>
     <!-- End Bootstrap navbar -->
 
-    <!-- main -->
+    <!-- banner -->
 
-    <div>
-        <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="media.html"><img src="images/artwork01.jpg" alt="vector landscape" title="Vector Landscape"></a></div>
-                    <div class="swiper-slide"><a href="media.html"><img src="images/artwork02.jpg" alt="wireframe landscape" title="Wireframe Landscape"></a></div>
-                    <div class="swiper-slide"><a href="coding.html"><img src="images/artwork04.jpg" alt="code" title="Code"></a></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
+    <div class="banner">
+        <img src="images/banner.jpg" class="img-fluid" alt="Responsive image">
     </div>
 
-    <div class="main">
+    <!-- main -->
 
-        <h1 class="top-title">Li's Digital Services</h1>
-        <p><br>&nbsp;&nbsp;&nbsp;&nbsp;From building an online presence to creating logos and digital art, I would love to aid you or your company into building a <b>successful presence</b> in the digital landscape. To view examples of my works, the slideshow above is available. If you want to go more in-depth about each item and the pricing, click on the tabs at the top. If you are on mobile, click the 3 bars and select from there. </p>
-        <p style="color: red"><b>**Pages started on 6/12/2019 at is still construction</b></p>
+    <div class="main">
+        <h1></h1>
+        <p><br></p>
     </div>
 
     <!-- end main -->
@@ -97,8 +85,8 @@
         <div class="footer-bottom">
 
             <ul class="bottom">
-                <li><a href="#">Home </a></li>
-                <li><a href="media.html">Logo & Media </a></li>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="#">Logo & Media </a></li>
                 <li><a href="coding.html">Coding </a></li>
                 <li><a href="contact.html">Contact </a></li>
                 <li><a href="blog.html">Blog </a></li>
@@ -113,27 +101,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-
     <script>
     "use strict";
-    var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 0,
-            centeredSlides: true,
-            loop: true,
-        autoplay: {
-            delay: 2750,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
-        });
 
     $(".backtotop").click(function() {
         return $("html, body").animate({
@@ -146,15 +115,6 @@
     
     $(document).ready(function() {
         $(".alert").slideDown();
-        var mySwiper = document.querySelector('.swiper-container').swiper
-
-        $(".swiper-container").mouseenter(function() {
-            mySwiper.autoplay.stop();
-        });
-
-        $(".swiper-container").mouseleave(function() {
-            mySwiper.autoplay.start();
-        });
     });
     </script>
 
