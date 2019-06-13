@@ -27,6 +27,15 @@ p {
 .banner {
     margin-top:56px;
     margin-bottom: 150px;
+    background-image: url("../images/banner.jpg");
+
+    max-width:100%;
+    position: relative;
+
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* swiper */
 .swiper-wrapper img {
