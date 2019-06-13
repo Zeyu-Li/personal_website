@@ -32,10 +32,13 @@ p {
     max-width:100%;
     position: relative;
 
-    /* background-attachment: fixed; */
+    background-attachment:scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.img-fluid {
+    opacity: 0;
 }
 /* swiper */
 .swiper-wrapper img {
