@@ -20,6 +20,9 @@ p {
     padding-left: 2em;
     padding-right: 2em;
 }
+.main a:hover {
+    color: rgb(7, 72, 194);
+}
 /* banner */
 .banner {
     margin-top:56px;
@@ -50,14 +53,14 @@ p {
 .navbar-brand:hover {
     color: #cccccc!important;
 }
-.nav-link:hover, .navbar-brand:hover, .nav-link, .navbar-brand {
+.nav-link:hover, .navbar-brand:hover, .nav-link, .navbar-brand, .main a:hover, .main a {
     transition: .2s;
     -moz-transition: .2s;
     -webkit-transition: .2s;
     -o-transition: .2s;
 }
 /* footer */
-.footer a, .footer a:hover {
+.footer a, .footer a:hover, .main a:hover {
     text-decoration: none;
 }
 .footer {
