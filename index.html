@@ -26,6 +26,13 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    @media only screen and (max-width: 1640px) {
+        .arrow {
+            display: none!important;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -60,7 +67,7 @@
 
     <!-- main -->
 
-    <div>
+    <div class="intro-image">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><a href="media.html"><img src="images/artwork01.jpg" alt="vector landscape" title="Vector Landscape"></a></div>
@@ -73,13 +80,21 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        <a class="arrow" href="#down"></a>
     </div>
 
     <div class="main">
 
-        <h1 class="top-title">Li's Digital Services</h1>
+        <h1 class="top-title" id="down">Li's Digital Services</h1>
         <p><br>&nbsp;&nbsp;&nbsp;&nbsp;From building an online presence to creating logos and digital art, I would love to aid you or your company into building a <b>successful presence</b> in the digital landscape. To view examples of my works, the slideshow above is available. If you want to go more in-depth about each item and the pricing, click on the tabs at the top. If you are on mobile, click the 3 bars and select from there. </p>
-        <p style="color: red"><b>**Pages started on 6/12/2019 at is still construction</b></p>
+
+        <h2>Guide</h2>
+        <ul class="nav-points">
+            <li>To view my coding portfolio, click on the <a href="coding.html" target="_blank" id="contact">Code</a> tab of the banner.</li>
+            <li>To view artworks and other media assets, click on the <a href="media.html" target="_blank" id="contact">Logo & Media</a> tab</li>
+            <li>To contact Andrew Li, click on <a href="contact.html" target="_blank" id="contact">contact</a></li>
+            <li>To investigate Andrew Li's rambling and other short programs, click on <a href="blog.html" target="_blank" id="contact">blog</a></li>
+        </ul><br>
     </div>
 
     <!-- end main -->
