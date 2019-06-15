@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth
+}
 h2, h1 {
     text-align: center;
 }
@@ -13,7 +16,7 @@ p, h1, h2 {
     margin: 0 auto;
     max-width: 960px;
 }
-p {
+p, .table {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3em;
     line-height: 1.7em;
@@ -21,27 +24,34 @@ p {
     padding-right: 2em;
 }
 .main a:hover {
-    color: rgb(7, 72, 194);
+    color: rgb(7, 72, 194)!important;
 }
 /* banner */
 .banner {
     margin-top:56px;
     margin-bottom: 150px;
     background-image: url("../images/banner.jpg");
-    height: 30vh;
     position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img-fluid {
-    opacity: 0;
-    height: 25vh;
+.banner-image {
+    height: 25vh!important;
+    content:url("../images/banner-top.svg");
+}
+@media only screen and (max-width: 600px) {
+    .banner-image {
+        content:url("../images/banner-top-mobile.svg");
+    }
+    .banner {
+        margin-bottom: -50px;
+    }
 }
 /* swiper */
 .swiper-wrapper img {
-    width: 100vw;
+    width: 50vw;
 }
 .swiper-pagination-bullet {
     transition: .3s;
@@ -71,7 +81,7 @@ p {
     -o-transition: .2s;
 }
 /* footer */
-.footer a, .footer a:hover, .main a:hover {
+a, .footer a:hover, .main a:hover {
     text-decoration: none;
 }
 .footer {
@@ -162,3 +172,39 @@ p {
     border-top: 1px solid #383838
 }
 /* end footer */
+/* table */
+.table {
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: table;
+    border: 1px solid #000;
+    background-color: #f5f5f5;
+    width: auto!important;
+}
+.expand {
+    cursor: pointer;
+    color: #007bff!important;
+}
+.expand:hover {
+    color: rgb(7, 72, 194)!important;
+}
+.hidden {
+    display: none;
+}
+.tableContainer p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tableContainer h2 {
+    padding-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* end table */
+/* misc */
+.show {
+    margin-top: 0px!important;
+}

@@ -8,7 +8,9 @@ $(".backtotop").click(function() {
 $(".close").click(function(){
     $(".alert").slideUp();
 });
-
+$(".expand").click(function () {
+    $(".hidden").slideToggle()
+})
 $(document).ready(function() {
     $(".alert").slideDown();
 });

@@ -18,6 +18,7 @@ This site is separated into the following tabs:
 * [Bootstrap 4](https://getbootstrap.com/)
 * [jQuery.js](https://jquery.com)
 * [popper.js](https://popper.js.org/)
+* [swiper.js](https://idangero.us/swiper/) *carousel
 
 ## Usage
 

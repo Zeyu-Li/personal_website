@@ -19,6 +19,7 @@
     <!-- css libraries -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pong.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -59,15 +60,142 @@
 
     <!-- banner -->
 
-    <div class="banner">
-        <img src="images/banner.jpg" class="img-fluid" alt="banner">
+    <div class="banner container-fluid">
+        <img class=" banner-image" alt="banner">
     </div>
 
     <!-- main -->
 
     <div class="main">
-        <h1></h1>
-        <p><br></p>
+        <h1>Andrew's Blog</h1>
+        <p><br>This is Andrew's spicy blogs, which he posts about updated stuff in his life. It also houses some interesting Javascript project</p>
+        <div class="tableContainer">
+            <div class="table">Journal Navigation Index <a class="expand">[Expand]</a>
+                <hr>
+                <ul class="hidden">
+                    <li><a href="#j2">Journal 3 (6/15/2019)</a></li>
+                    <li><a href="#j2">Journal 2 (6/14/2019)</a></li>
+                    <li><a href="#j1">Journal 1 (6/13/2019)</a></li>
+                </ul>
+            </div>
+            <h2 id="j3">Journal 3 (6/15/2019):</h2>
+            <p>I have plenty of time today and I think I will finish today. 
+            So far I have completed the contact, banner and this blog page.
+            We will see how far I get.</p>
+            <p>What ever the case, here is the pong game ported from the other project:</p>
+            <div class="pongCanvas">
+                <div class="backGround2" style="position: relative">
+
+                    <div style="text-align: center;padding-top: 85px" class="init"><button class="button"
+                            style="background:none;border:none;width: 50px;height: 50px;margin: auto 0;">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="50px" y="50px" viewBox="0 0 25 25"
+                                style="enable-background:new 0 0 25 25;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #E0E0E0;
+                                    }
+
+                                    .st1 {
+                                        fill: #7C7C7C;
+                                    }
+                                </style>
+                                <circle class="st0" cx="12.5" cy="12.5" r="12.5" />
+                                <polygon class="st1" points="10,6.5 10,18.5 21,12.5 " />
+                            </svg>
+                        </button></div>
+                    <div class="ball" style="width: 10px;height: 10px;">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" viewBox="0 0 100 100"
+                            style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: url(#SVGID_1_);
+                                }
+                            </style>
+                            <g>
+                                <radialGradient id="SVGID_1_" cx="50" cy="50" r="50" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" style="stop-color:#FFFFFF" />
+                                    <stop offset="0.5149" style="stop-color:#FDFDFD" />
+                                    <stop offset="0.7003" style="stop-color:#F6F6F6" />
+                                    <stop offset="0.8325" style="stop-color:#EBEBEB" />
+                                    <stop offset="0.9387" style="stop-color:#DADADA" />
+                                    <stop offset="1" style="stop-color:#CCCCCC" />
+                                </radialGradient>
+                                <circle class="st0" cx="50" cy="50" r="50" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="playerPaddle" style="width: 10px;height: 50px;">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="50px" viewBox="0 0 10 50"
+                            style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: url(#SVGID_1_);
+                                }
+                            </style>
+                            <g>
+                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="10" y2="25">
+                                    <stop offset="0" style="stop-color:#C9C9C9" />
+                                    <stop offset="0.0138" style="stop-color:#CDCDCD" />
+                                    <stop offset="0.1143" style="stop-color:#E3E3E3" />
+                                    <stop offset="0.2243" style="stop-color:#F3F3F3" />
+                                    <stop offset="0.3498" style="stop-color:#FCFCFC" />
+                                    <stop offset="0.525" style="stop-color:#FFFFFF" />
+                                    <stop offset="0.7022" style="stop-color:#FCFCFC" />
+                                    <stop offset="0.8092" style="stop-color:#F4F4F4" />
+                                    <stop offset="0.8976" style="stop-color:#E6E6E6" />
+                                    <stop offset="0.9754" style="stop-color:#D2D2D2" />
+                                    <stop offset="1" style="stop-color:#C9C9C9" />
+                                </linearGradient>
+                                <path class="st0"
+                                    d="M5,0L5,0c2.76,0,5,2.24,5,5v40c0,2.76-2.24,5-5,5h0c-2.76,0-5-2.24-5-5V5C0,2.24,2.24,0,5,0z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="AIPaddle" style="width: 10px;height: 50px;">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 50"
+                            style="enable-background:new 0 0 10 50;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: url(#SVGID_1_);
+                                }
+                            </style>
+                            <g>
+                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="10" y2="25">
+                                    <stop offset="0" style="stop-color:#C9C9C9" />
+                                    <stop offset="0.0138" style="stop-color:#CDCDCD" />
+                                    <stop offset="0.1143" style="stop-color:#E3E3E3" />
+                                    <stop offset="0.2243" style="stop-color:#F3F3F3" />
+                                    <stop offset="0.3498" style="stop-color:#FCFCFC" />
+                                    <stop offset="0.525" style="stop-color:#FFFFFF" />
+                                    <stop offset="0.7022" style="stop-color:#FCFCFC" />
+                                    <stop offset="0.8092" style="stop-color:#F4F4F4" />
+                                    <stop offset="0.8976" style="stop-color:#E6E6E6" />
+                                    <stop offset="0.9754" style="stop-color:#D2D2D2" />
+                                    <stop offset="1" style="stop-color:#C9C9C9" />
+                                </linearGradient>
+                                <path class="st0"
+                                    d="M5,0L5,0c2.76,0,5,2.24,5,5v40c0,2.76-2.24,5-5,5h0c-2.76,0-5-2.24-5-5V5C0,2.24,2.24,0,5,0z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="scoreContainer">
+                    <p class="log">SCORE: 0</p>
+                </div>
+            </div><br>
+            <p class="warning_parent"><b class="warning"></b></p>
+            <h2 id="j2">Journal 2 (6/14/2019):</h2>
+            <p>I have less than 15 min to do anything, but I have almost fixed the parallax scrolling banner</p>
+            <h2 id="j1">Journal 1 (6/13/2019):</h2>
+            <p>I've now start this website based off of my 
+            <a href="https://github.com/Zeyu-Li/website_old" target="_blank">old website </a>
+            but using Bootstrap 4 and using a almost none of my old code</p>
+        </div>
     </div>
 
     <!-- end main -->
@@ -102,6 +230,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="js/pong.js"></script>
     <script src="js/index.js"></script>
 
 </body>
