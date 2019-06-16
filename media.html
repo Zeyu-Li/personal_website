@@ -18,6 +18,7 @@
 
     <!-- css libraries -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -25,6 +26,17 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    .project-item {
+        background-color: white;
+    }
+    .swiper-wrapper img {
+    width: 60vw;
+    }
+    .padding {
+        padding-bottom: 5vh
+    }
+    </style>
 </head>
 
 <body>
@@ -57,13 +69,70 @@
     </nav>
     <!-- End Bootstrap navbar -->
 
-    <!-- banner -->
-
     <!-- main -->
 
-    <div class="main">
-        <h1></h1>
-        <p><br></p>
+    <div class="main_copy">
+        <div class="top-media">
+            <div class="block blue" style="opacity: .92">
+                <h1 class="code-title">Andrew Li: Logo and Media Designer<br></h1>
+                <a class="arrow" href="#about"></a>
+            </div>
+        </div>
+
+        <!-- about me -->
+        <div id="about">
+            <h1 class="white-body">About Andrew </h1>
+            <p class="code-text"><br>I have been working the digital environment for all my live and I have created vector artworks as well as vector logos. I also do some work in the 3D space using <a href="https://www.maxon.net/en/" target="_blank">Cinema 4D</a> and <a href="https://www.blender.org/" target="_blank">Blender</a> <br><br></p>
+        </div>
+
+        <!-- skills -->
+        <div class="blue padding">
+        <div>
+            <h1  class="media-title">Projects</h1>
+        </div>
+
+        <div class="project"><br>
+            <div class="project-item">
+                <h2>Media Assets</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/artwork01.jpg" title="Vector Artwork" alt="Vector artwork"></div>
+                        <div class="swiper-slide"><img src="images/artwork02.jpg" title="Wireframe Artwork" alt="Wireframe artwork"></div>
+                        <div class="swiper-slide"><img src="images/artwork03.jpg" title="Tardis Artwork" alt="Tardis artwork"></div>
+                        <div class="swiper-slide"><img src="images/artwork05.jpg" title="Another Vector Artwork" alt="another vector artwork"></div>
+                        <div class="swiper-slide"><img src="images/artwork06.jpg" title="Blender Project" alt="Blender Project"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h2>Logos/ Icons</h2>
+                
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/artworka1.jpg" title="Logos" alt="Logo"></div>
+                            <div class="swiper-slide"><img src="images/artworka2.jpg" title="Icons" alt="icons"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div></div>
+        </div>
+        </div>
+
+        <div class="text-center">
+            <p style="margin-top: 3vh"><br><br>Resume: <a id="contact" target="_blank" href="pdf/resume.pdf">resume.pdf</a><br></p>
+            <p style="margin-top: 3vh">Contact: <a id="contact" target="_blank" href="contact.html">link</a><br></p>
+        </div>
+
     </div>
 
     <!-- end main -->
@@ -97,8 +166,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
 
 </body>
 

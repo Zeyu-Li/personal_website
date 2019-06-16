@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
     <!-- meta data -->
     <meta charset="utf-8">
@@ -18,13 +21,20 @@
 
     <!-- css libraries -->
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+.swiper-wrapper img {
+    width: 60vw;
+}
+    </style>
 </head>
 
 <body>
@@ -36,13 +46,14 @@
             </button>
         </div>
     <![endif]-->
-        
+
 
     <!-- Bootstrap navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html"><img src="images/circuit.svg" width="30" height="30"
-            class="d-inline-block align-top img-fluid hoverable" alt="Circuit Logo"> Li's Digital Services</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                class="d-inline-block align-top img-fluid hoverable" alt="Circuit Logo"> Li's Digital Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -70,10 +81,11 @@
         <!-- about me -->
         <div id="about">
             <h1 class="white-body">About Andrew </h1>
-            <p class="code-text"><br>I am a <b>creative</b> and <b>hardworking innovator</b> that takes initiative and has a thirst
+            <p class="code-text"><br>I am a <b>creative</b> and <b>hardworking innovator</b> that takes initiative and
+                has a thirst
                 for knowledge. I am both a <b>front-end and back-end developer</b> working towards being a full stack
                 developer, however, my knowledge expends beyond code to include <b>robotics and engineering,
-                marketing, design, music, leadership, and business</b>. If you are looking to add me on your
+                    marketing, design, music, leadership, and business</b>. If you are looking to add me on your
                 team or to contract me for something, click on the contact tab.<br><br> I am soon attending the
                 University of Alberta to study computer science. My projects, skills, and resume are at the bottom
                 of the page. </p>
@@ -82,69 +94,94 @@
         <!-- skills -->
         <div class="blue">
             <div class="code-table container-fluid">
-            <div class="box">
-                <h2><img src="images/1.svg" class="icon"> Front End</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h2><img src="images/2.svg" class="icon"> Back End</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>C++</li><br>
-                </ul>
-            </div>
-            <div class="box">
-                <h2><img src="images/3.svg" class="icon"> Libraries</h2>
-                <ul>
-                    <li>jQuery</li>
-                    <li>Django</li>
-                </ul>
-            </div>
+                <div class="box">
+                    <h2><img src="images/1.svg" class="icon"> Front End</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2><img src="images/2.svg" class="icon"> Back End</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li><br>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2><img src="images/3.svg" class="icon"> Libraries</h2>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
 
-            <div class="box">
-                <h2 class="misc"><img src="images/4.svg" class="icon"> Other</h2>
-                <ul>
-                    <li>SQL</li>
-                    <li>Git/Github</li>
-                    <li>Microsoft Office</li>
-                    <li>LaTeX</li>
-                </ul>
+                <div class="box">
+                    <h2 class="misc"><img src="images/4.svg" class="icon"> Other</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Git/Github</li>
+                        <li>Microsoft Office</li>
+                        <li>LaTeX</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2><img src="images/5.svg" class="icon"> Designer</h2>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe After Effects/ Premiere Pro</li>
+                        <li>Blender</li>
+                        <li>Cinema 4D</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2><img src="images/6.svg" class="icon"> Learning</h2>
+                    <ul>
+                        <li>C#</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
             </div>
-            <div class="box">
-                <h2><img src="images/5.svg" class="icon"> Designer</h2>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe After Effects/ Premiere Pro</li>
-                    <li>Blender</li>
-                    <li>Cinema 4D</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h2><img src="images/6.svg" class="icon"> Learning</h2>
-                <ul>
-                    <li>C#</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-        </div>
         </div>
 
         <!-- projects -->
 
-        <div><h1 class="white-body">Projects</h1></div>
-        
+        <div>
+            <h1 class="white-body">Projects</h1>
+        </div>
+
         <div class="project"><br>
-            <h2>Project 1: Javascript Pong Game</h2>
-            <p>w/ jQuery: <a href="blog.html#j4" target="_target" id="contact">link
-            <br><img src="images/pro1.JPG" alt="image of Javascript game" title="code example 2"
-                style="border-radius: 40px;max-width: 100%;height: auto;"></a></p>
-            <div><p style="margin-top: 3vh">Resume: <a id="contact" target="_blank" href="pdf/resume.pdf">resume.pdf</a><br></p></div>
+            <div class="project-item">
+                <h2>Project 2: Django Login</h2>
+                <p>w/ Django + Bootstrap: <a href="https://github.com/Andrew423/django_login" target="_target"
+                        id="contact">link</a><br></p>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="https://github.com/Andrew423/django_login" target="_target"><img src="images/pro2c.jpg"></a></div>
+                                <div class="swiper-slide"><a href="https://github.com/Andrew423/django_login" target="_target"><img src="images/pro2a.jpg"></a></div>
+                                <div class="swiper-slide"><a href="https://github.com/Andrew423/django_login" target="_target"><img src="images/pro2b.jpg"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+            </div>
+
+            <div class="project-item">
+                <h2>Project 1: Javascript Pong Game</h2>
+                <p>w/ jQuery: <a href="blog.html#j4" target="_target" id="contact">link
+                        <br><img src="images/pro1.JPG" alt="image of Javascript game" title="code example 1"
+                            class="show-img"></a></p>
+            </div>
+            <div>
+                <p style="margin-top: 3vh">Resume: <a id="contact" target="_blank" href="pdf/resume.pdf">resume.pdf</a><br></p>
+                <p style="margin-top: 3vh">Contact: <a id="contact" target="_blank" href="contact.html">link</a><br></p>
+            </div>
         </div>
 
     </div>
@@ -152,15 +189,15 @@
     <!-- end main -->
 
     <!-- footer -->
-    
-<footer class="footer">
+
+    <footer class="footer">
 
         <div class="footer-top">
             <p class="footer-note">&copy; 2019 Andrew Li. All Rights Reserved.
-            <a class="backtotop" href="#">&#9650; Back to top</a></p>
+                <a class="backtotop" href="#">&#9650; Back to top</a></p>
         </div>
         <hr class="divider">
-        
+
         <div class="footer-bottom">
 
             <ul class="bottom">
@@ -173,15 +210,21 @@
 
         </div>
 
-</footer>
+    </footer>
     <!-- end footer -->
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
 
 </body>
 
