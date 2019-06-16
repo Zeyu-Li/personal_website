@@ -65,8 +65,8 @@ p,
 }
 
 .banner-image {
-    height: 25vh !important;
     content: url("../images/banner-top.svg");
+    height: 25vh !important;
 }
 
 @media only screen and (max-width: 600px) {
