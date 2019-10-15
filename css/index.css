@@ -280,7 +280,9 @@ p,
         grid-column-gap: 2em;
         margin-left: 0vw !important;
     }
-
+    .code-title {
+        padding-top: 20vh;
+    }
     .box {
         width: 90vw;
     }
