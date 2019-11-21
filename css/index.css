@@ -332,6 +332,10 @@ p,
     .code-title {
         font-size: 45px;
     }
+    .project-item {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
 
 @media only screen and (max-width: 530px) {
