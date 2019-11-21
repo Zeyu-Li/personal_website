@@ -26,8 +26,8 @@ p, h1, h2 {
 }
 
 .top-title {
-    margin-top: 70px;
-    margin-bottom: 40px;
+    margin-top: 12vh;
+    margin-bottom: 30px;
 }
 
 .code-text {
@@ -42,7 +42,7 @@ p, h1, h2 {
 p,
 .table,
 .nav-points {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     font-size: 1.3em;
     line-height: 1.7em;
     padding-left: 2em;
@@ -132,22 +132,19 @@ p,
 /* arrow */
 .arrow {
     background: url(../images/arrow.svg);
-    object-fit: cover;
-    background-size: contain;
     display: block;
+    object-fit: cover;
     cursor: pointer;
     position: absolute;
     bottom: 25px;
-    left: 45%;
-    margin-left: -15px;
     width: 18vw;
     height: 18vw;
-    padding: 0;
+    left: 44.7vw;
     background-repeat: no-repeat;
     text-align: center;
     max-width: 150px;
     max-height: 150px;
-    z-index: 100;
+    z-index: 10;
 }
 
 .arrow:hover {
@@ -328,6 +325,12 @@ p,
 
     .box {
         width: 39vw;
+    }
+    .arrow {
+        left: 40vw;
+    }
+    .code-title {
+        font-size: 45px;
     }
 }
 

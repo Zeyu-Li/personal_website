@@ -3,6 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
     <!-- meta data -->
     <meta charset="utf-8">
@@ -34,7 +35,18 @@
     width: 60vw;
     }
     .padding {
-        padding-bottom: 5vh
+        padding-bottom: 5vh;
+    }
+    .top_container {
+        display: table;
+    }
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
     }
     </style>
 </head>
@@ -74,15 +86,22 @@
     <div class="main_copy">
         <div class="top-media">
             <div class="block blue" style="opacity: .92">
-                <h1 class="code-title">Andrew Li: Logo and Media Designer<br></h1>
+                <h1 class="code-title"><b>Andrew Li: <br>Logo and Media Designer</b><br></h1>
                 <a class="arrow" href="#about"></a>
             </div>
         </div>
 
         <!-- about me -->
-        <div id="about">
-            <h1 class="white-body">About Andrew </h1>
-            <p class="code-text"><br>I have been working the digital environment for all my live and I have created vector artworks as well as vector logos. I also do some work in the 3D space using <a href="https://www.maxon.net/en/" target="_blank">Cinema 4D</a> and <a href="https://www.blender.org/" target="_blank">Blender</a> <br><br></p>
+        <div id="about" class="block top_container">
+            <div class="middle">
+                <div class="inner">
+                    <h1 class="white-body">About Andrew </h1>
+                    <p class="code-text"><br>I have been working the digital environment for all my live and 
+                        I have created vector artworks as well as vector logos. 
+                        I also do some work in the 3D space using <a href="https://www.maxon.net/en/" target="_blank">Cinema 4D</a> 
+                        and <a href="https://www.blender.org/" target="_blank">Blender</a> <br><br></p>
+                </div>
+            </div>
         </div>
 
         <!-- skills -->
@@ -97,6 +116,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="images/artwork01.jpg" title="Vector Artwork" alt="Vector artwork"></div>
+                        <div class="swiper-slide"><img src="images/artwork03.svg" title="ISO Artwork" alt="ISO artwork"></div>
                         <div class="swiper-slide"><img src="images/artwork02.jpg" title="Wireframe Artwork" alt="Wireframe artwork"></div>
                         <div class="swiper-slide"><img src="images/artwork03.jpg" title="Tardis Artwork" alt="Tardis artwork"></div>
                         <div class="swiper-slide"><img src="images/artwork05.jpg" title="Another Vector Artwork" alt="another vector artwork"></div>
@@ -115,7 +135,8 @@
                 
                 <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/artworkA1.jpg" title="Logos" alt="Logo"></div>
+                            <div class="swiper-slide"><img src="images/logos.svg" title="Logos" alt="Logos"></div>
+                            <div class="swiper-slide"><img src="images/artworkA1.jpg" title="Logos" alt="more logos"></div>
                             <div class="swiper-slide"><img src="images/artworkA2.jpg" title="Icons" alt="icons"></div>
                         </div>
                         <!-- Add Pagination -->
@@ -134,33 +155,32 @@
         </div>
 
     </div>
-
     <!-- end main -->
 
-    <!-- footer -->
+<!-- footer -->
     
 <footer class="footer">
 
-        <div class="footer-top">
-            <p class="footer-note">&copy; 2019 Andrew Li. All Rights Reserved.
-            <a class="backtotop" href="#">&#9650; Back to top</a></p>
-        </div>
-        <hr class="divider">
-        
-        <div class="footer-bottom">
+    <div class="footer-top">
+        <p class="footer-note">&copy; 2019 Andrew Li. All Rights Reserved.
+        <a class="backtotop" href="#">&#9650; Back to top</a></p>
+    </div>
+    <hr class="divider">
+    
+    <div class="footer-bottom">
 
-            <ul class="bottom">
-                <li><a href="index.html">Home </a></li>
-                <li><a href="#">Logo & Media </a></li>
-                <li><a href="coding.html">Coding </a></li>
-                <li><a href="contact.html">Contact </a></li>
-                <li><a href="blog.html">Blog </a></li>
-            </ul>
+        <ul class="bottom">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="#">Logo & Media </a></li>
+            <li><a href="coding.html">Coding </a></li>
+            <li><a href="contact.html">Contact </a></li>
+            <li><a href="blog.html">Blog </a></li>
+        </ul>
 
-        </div>
+    </div>
 
 </footer>
-    <!-- end footer -->
+<!-- end footer -->
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

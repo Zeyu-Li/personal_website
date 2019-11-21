@@ -38,16 +38,9 @@
         }
         
         .swiper-container {
-            margin-top: 56px; 
             height: 100vh;
         }
-        @media only screen and (max-width: 1640px) {
-            .arrow {
-                display: none!important;
-            }
-        }
     </style>
-
 </head>
 
 <body>
@@ -82,10 +75,12 @@
     <!-- cover slideshow -->
     <div class="intro-image">
         <div class="swiper-container">
+            <a class="arrow" href="#down"></a>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><a href="media.html"><img src="images/artwork01.jpg" alt="vector landscape" title="Vector Landscape"></a></div>
+                <div class="swiper-slide"><a href="media.html"><img src="images/artwork03.svg" alt="ISO landscape" title="ISO Landscape"></a></div>
                 <div class="swiper-slide"><a href="media.html"><img src="images/artwork02.jpg" alt="wireframe landscape" title="Wireframe Landscape"></a></div>
-                <div class="swiper-slide"><a href="coding.html"><img src="images/artwork04.jpg" alt="code" title="Code"></a></div>
+                <div class="swiper-slide"><a href="coding.html"><img src="images/artwork04.jpg" alt="wall of code" title="Code"></a></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -93,7 +88,6 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        <a class="arrow" href="#down"></a>
     </div>
 
     <!-- main -->
@@ -102,21 +96,23 @@
         <h1 class="top-title" id="down">Li's Digital Services</h1>
         <p><br>&nbsp;&nbsp;&nbsp;&nbsp;From building an online presence to creating logos and digital art, 
             I would love to aid you or your company into building a <b>successful presence</b> 
-            in the digital landscape. I can help you create a website, ... To view examples of my works, the slideshow above is available. 
+            in the digital landscape. I can help you <b>create a website</b> (static or with forms using Django) or <b>create a logo or background</b> 
+            in any of the following formats: isometric, vector, or 3D. To view examples of my works, the slideshow above is available. 
             If you want to go more in-depth about each item and the pricing, click on the tabs at the top. 
-            If you are on mobile, click the 3 bars and select from there. </p>
+            If you are on mobile, click the 3 bars and select from there. </p><br>
 
-        <h2>Guide</h2>
+        <h2>Quick Guide</h2>
         <ul class="nav-points">
-            <li>To view my coding portfolio, click on the <a href="coding.html" target="_blank" id="contact">Code</a> tab of the banner.</li>
-            <li>To view artworks and other media assets, click on the <a href="media.html" target="_blank" id="contact">Logo & Media</a> tab</li>
+            <li>To view my coding portfolio, click on the <a href="coding.html" id="contact">Code</a> tab of the banner. 
+                If you want to view my projects, click <a href="coding.html#projects" id="contact">here</a></li>
+            <li>To view artworks and other media assets, click on the <a href="media.html" id="contact">Logo & Media</a> tab</li>
             <li>To contact Andrew Li, click on <a href="contact.html" target="_blank" id="contact">contact</a></li>
-            <li>To investigate Andrew Li's rambling and other short programs, click on <a href="blog.html" target="_blank" id="contact">blog</a></li>
+            <li>To investigate Andrew Li's rambling and other short programs, click on <a href="blog.html" id="contact">blog</a></li>
         </ul><br>
     </div>
     <!-- end main -->
 
-    <!-- footer -->
+<!-- footer -->
 
 <footer class="footer">
 
@@ -139,7 +135,7 @@
         </div>
 
 </footer>
-    <!-- end footer -->
+<!-- end footer -->
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
