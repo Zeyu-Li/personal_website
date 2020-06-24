@@ -211,7 +211,7 @@ p,
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 1em;
     grid-row-gap: 2em;
-    margin-left: 5vw !important;
+    justify-items: center;
 }
 
 .box {
